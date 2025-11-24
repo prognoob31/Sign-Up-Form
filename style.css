@@ -1,225 +1,175 @@
-/* =========================
-   GLOBAL RESET & BASE STYLES
-   ========================= */
 
-/* Applies to every element */
-* {
-  margin: 0;                     /* Removes default browser spacing */
-  padding: 0;                    /* Prevents unexpected gaps */
-  box-sizing: border-box;        /* Makes width include padding + border */
-  font-family: Arial, sans-serif; /* Sets a clean default font */
+*{
+  margin: 0;                     
+  padding: 0;                   
+  box-sizing:  border-box;        
+  font-family:  Arial, sans-serif; 
 }
 
-/* Makes the body fill the full screen height */
 body {
-  height: 100vh;
+  height:  100vh;
 }
-
-
-/* =========================
-   MAIN PAGE LAYOUT
-   ========================= */
 
 .page-container {
-  display: flex;                 /* Places children side-by-side (left + right) */
-  height: 100vh;                 /* Ensures layout fills the viewport */
+  display:  flex;    
+  height:  100vh;                 
 }
 
-
-/* =========================
-   LEFT IMAGE SECTION
-   ========================= */
 
 .image-section {
-  flex: 1;                       /* Takes proportional width */
-  background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg"); /* Background hero image */
-  background-size: cover;        /* Image always covers entire section */
-  background-position: center;  /* Keeps image centered */
-  position: relative;            /* Allows absolute positioning inside */
+  flex: 1;      
+  background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg"); 
+  background-size:  cover;     
+  background-position:  center;  
+  position:  relative;         
 }
 
-
-/* =========================
-   LOGO OVERLAY BAR
-   ========================= */
 
 .logo-overlay {
-  position: absolute;            /* Positions over image */
-  top: 20%;                      /* Pushes bar down for visual balance */
-  width: 100%;                   /* Spans full width */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
-  color: white;                  /* Makes text readable */
-  display: flex;                 /* Aligns logo and text horizontally */
-  align-items: center;           /* Vertical centering */
-  justify-content: center;       /* Horizontal centering */
-  padding: 20px 0;               /* Vertical breathing space */
+  position:  absolute;           
+  top: 20%;                      
+  width: 100%;         
+  background: rgba(0, 0, 0, 0.5); 
+  color: white;     
+  display: flex;    
+  align-items: center; 
+  justify-content:  center;   
+  padding:  20px 0;   
 }
 
 
-/* Logo image styling */
 .logo-image {
-  height: 80px;                  /* Controls logo size */
-  margin-right: 15px;            /* Spacing between logo and text */
+  height:  80px;                
+  margin-right:  15px;    
 }
 
-
-/* ODIN text styling */
 .logo-text {
-  font-size: 3rem;               /* Large dramatic text */
-  letter-spacing: 5px;           /* Wide spacing for bold brand effect */
+  font-size:  3rem;       
+  letter-spacing:  5px;    
 }
 
 
-/* =========================
-   PHOTO CREDIT
-   ========================= */
+
 
 .photo-credit {
-  position: absolute;            /* Anchors text over image */
-  bottom: 10px;                  /* Sticks to bottom */
-  width: 100%;
-  text-align: center;            /* Centers text */
-  color: white;                  /* Visible over image */
-  font-size: 0.8rem;             /* Subtle small text */
+  position:  absolute;  
+  bottom:  10px;            
+  width:  100%;
+  text-align:  center;  
+  color:  white;     
+  font-size:  0.8rem;     
 }
 
-/* Keeps links white */
+
 .photo-credit a {
-  color: white;
+  color:  white;
 }
 
 
-/* =========================
-   RIGHT FORM SECTION
-   ========================= */
 
 .form-section {
-  flex: 1.2;                     /* Slightly wider than image section */
-  background: #f9fafb;           /* Soft light grey background */
-  display: flex;
-  flex-direction: column;        /* Stack children vertically */
-  justify-content: center;       /* Vertically center content */
+  flex:  1.2;                    
+  background:  #f9fafb;     
+  display:  flex;
+  flex-direction:  column;      
+  justify-content:  center;   
 }
 
 
-/* =========================
-   INTRO TEXT
-   ========================= */
 
 .intro-text {
-  padding: 40px 60px;            /* Space around text */
-  font-size: 1.1rem;             /* Slightly larger for emphasis */
-  font-weight: 600;              /* Semi-bold for importance */
-  line-height: 1.5;              /* Improves readability */
+  padding: 40px 60px; 
+  font-size:  1.1rem;   
+  font-weight:  600;         
+  line-height:  1.5;     
 }
 
-
-/* =========================
-   FORM CONTAINER
-   ========================= */
 
 .form-wrapper {
-  background: white;             /* White card look */
-  padding: 30px 60px;            /* Internal spacing */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft elevation shadow */
+  background:  white;        
+  padding:  30px 60px;   
+  box-shadow:  0 4px 10px rgba(0,0,0,0.1); 
 }
 
-.form-wrapper h2 {
-  margin-bottom: 20px;           /* Space below heading */
+.form-wrapper  h2 {
+  margin-bottom:  20px;        
 }
 
 
-/* =========================
-   FORM GRID SYSTEM
-   ========================= */
 
 .form-grid {
-  display: grid;                 /* Enables grid layout */
-  grid-template-columns:  repeat(2, 1fr); /* 2 equal columns */
-  gap:  20px;                     /* Spacing between fields */
-}
+  display:  grid;  
+  grid-template-columns:   repeat(2, 1fr); 
+  gap:   20px;          
 
 
-/* Each  label-input pair */
 .form-group {
-  display:  flex;
-  flex-direction:  column;        /* Label above input */
+  display:   flex;
+  flex-direction:  column;  
 }
 
 
-/* =========================
-   LABEL STYLING
-   ========================= */
 
 label {
-  font-size:  0.7rem;             /* Small label text */
-  letter-spacing:  1px;           /* Modern spacing */
-  margin-bottom:  5px;            /* Space above input */
-  color:  #333;                   /* Dark neutral color */
+  font-size:   0.7rem; 
+  letter-spacing:   1px;  
+  margin-bottom:   5px;    
+  color:    #333;   
 }
 
 
-/* =========================
-   INPUT BASE STYLE
-   ========================= */
 
 input {
-  padding:  8px;                  /* Comfortable typing space */
-  border: 1px  solid #E5E7EB;     /* Light grey default border */
-  border-radius:  5px;            /* Soft rounded edges */
-  font-size:   0.9rem;
+  padding:   8px;  
+  border:  1px  solid #E5E7EB;  
+  border-radius:   5px;    
+  font-size:    0.9rem;
 }
 
 
-/* Input active state */
 input:focus {
-  outline: none;                 /* Removes ugly default outline */
-  border: 1px solid #2563eb;     /* Blue focus border */
-  box-shadow: 0 0 4px rgba(37, 99, 235, 0.4); /* Soft glow effect */
+  outline:  none;  
+  border:  1px solid #2563eb;    /
+  box-shadow:  0 0 4px rgba(37, 99, 235, 0.4); 
 }
 
 
-/* Invalid field styling */
+
 input:invalid {
-  border: 1px solid red;         /* Visual error indicator */
+  border:  1px solid red;   
 }
 
 
-/* =========================
-   ACTION AREA (BUTTON + LOGIN)
-   ========================= */
 
 .action-area {
-  padding: 30px 60px;            /* Matches spacing of other sections */
+  padding:   30px 60px;      
 }
 
 
-/* Main CTA button */
 button {
-  background: #596D48;           /* Odin green tone */
-  color: white;
-  padding: 12px 40px;            /* Button size */
+  background:  #596D48;       
+  color:  white;
+  padding:  12px 40px;      
   border: none;
-  border-radius: 8px;            /* Rounded for modern look */
-  font-weight: bold;
-  cursor: pointer;               /* Pointer cursor on hover */
+  border-radius:  8px;        
+  font-weight:  bold;
+  cursor:  pointer;         
 }
 
-/* Hover interaction feedback */
+
 button:hover {
-  opacity: 0.9;                  /* Slight fade for interactivity */
+  opacity:  0.9;        
 }
 
 
-/* Login text spacing */
 .action-area p {
-  margin-top: 20px;
+  margin-top:  20px;
 }
 
 
-/* Login link styling */
+
 .action-area a {
-  color: #596D48;                /* Matches button color */
-  font-weight: bold;
-  text-decoration: none;         /* Removes underline */
+  color:  #596D48;               
+  font-weight:  bold;
+  text-decoration:  none;     
 }
